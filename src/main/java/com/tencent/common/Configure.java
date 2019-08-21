@@ -12,33 +12,17 @@ public class Configure {
 	// 收到API的返回的时候也要用这个key来对返回的数据算下签名，跟API的Sign数据进行比较，如果值不一致，有可能数据被第三方给篡
 
 
-	public static  String key="0b5f28356b5f4c9cb15efd73b9a5ec65";
+	public static  String key="";
 
-	public static  String appID="wx99b166ead9de02f1";
+	public static  String appID="";
 
-	public static  String mchID="1320274901";
+	public static  String mchID="";
 
-	public static  String certLocalPath="cert/apiclient_cert.p12";
+	public static  String certLocalPath="";
 	//public static final String certLocalPath="/home/saas/paygateway-server/cert-2/apiclient_cert.p12";
-	public static  String certPassword="1320274901";
+	public static  String certPassword="";
 
-//public static  String key="0b5f28356b5f4c9cb15efd73b9a5ec65";
-//
-//	public static  String appID="wx0a0242dd3212dd48";
-//
-//	public static  String mchID="1503333731";
-//	private static String key = "";//正式环境中的私钥-闪宝(服务商)
-//
-//
-//
-//	//private static String key = "";//测试环境中的私钥
-//	//微信分配的公众号ID（开通公众号之后可以获取到）
-//	private static String appID = "";
-//
-//	//微信支付分配的商户号ID（开通公众号的微信支付功能之后可以获取到）
-//	private static String mchID = "";//服务商
 
-	//private static String mchID="1320274901";
 
 	//受理模式下给子商户分配的子商户号
 	private static String subMchID = "";
@@ -48,11 +32,6 @@ public class Configure {
 
 	public static int maxReverseRetry=3;//最大撤销次数
 	public static long reverseDuration=5000;  // 撤销间隔（毫秒)
-
-//	//HTTPS证书的本地路径
-//	private static String certLocalPath = "cert/apiclient_cert_syb.p12";
-//	//HTTPS证书密码，默认密码等于商户号MCHID
-//	private static String certPassword = "1503333731";
 
 	//是否使用异步线程的方式来上报API测速，默认为异步模式
 	private static boolean useThreadToDoReport = true;
